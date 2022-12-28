@@ -1,0 +1,66 @@
+/* general style */
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis'; font-style: normal; font-weight: 500;
+  font-display: swap;
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+.container{
+  border: solid black 10px ;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+/* CSS HSL
+--imperial-red: hsla(355, 78%, 56%, 1);
+--honeydew: hsla(105, 55%, 96%, 1);
+--powder-blue: hsla(182, 43%, 76%, 1);
+--celadon-blue: hsla(203, 39%, 44%, 1);
+--prussian-blue: hsla(215, 50%, 23%, 1); */
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color:hsla(182, 43%, 76%, 1);
+  min-height: 95vh;
+  flex-direction: column;
+}
+
+h1{
+  color: hsla(215, 50%, 23%, 1);
+  font-size:72px;
+}
+
+
+/* set display style */
+#display{
+  background-color: antiquewhite;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-shadow: 1.3px 1.3px #383838;
+  margin: 5px;padding: 5px;
+  font-size: 56px;
+
+}
+/* layout for number-container */
+#number-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* set button general style */
+button{
+  margin: 1px;
+  border-radius: 5%;
+  border: none;
+  font-weight: initial;
+  font-size: 2em;  
+}
